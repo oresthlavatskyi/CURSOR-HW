@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ </html>
+<head>
+    <meta charset="UTF-8">
+    <title>Основні команди GIT</title>
+    <style>
+        body { 
+            background-color: coral;
+             }
+        li {
+            font-size: 25px;
+        }
+        h1, h2 {
+            text-align:center;
+        }
+        em {
+            color: blue;
+        }
+        P {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <h1>Основні команди GIT</h1>
+        <li>git config --global user.name blabla - <em>встановити mane користувача</em></li>
+        <li>git config --global user.email blabal@bla - <em>встановити email користувача</em></li>
+        <li>git init - <em>створити новий репозиторій</em></li>
+        <li>git status - <em>Це означає, що файл є новим і git ще не знає, потрібно слідкувати за його змінами, чи краще просто ігнорувати його.</em></li>
+        <li>git add - <em>додати всі змінені файли до stage</em></li>
+        <li>git commit - <em>створити новий commit</em></li>
+        <li>git branch - <em>показує всі гілки</em></li>
+        <li>git push - <em>відправляє дані локального репозиторію на віддалений</em></li>
+        <li>git pull - <em>завантажує вміст віддаленого репрезиторію</em></li>
+        <li>git merge - <em>з'єднує дві гілки в одну</em></li>
+        <li>git clone - <em>Проект буде клоновано з віддаленого сервера у поточний локальний</em></li>
+    </ul>
+        <h2> Що таке .gitignore файл?</h2>
+    <p><strong>.gitignore</strong> служить для вказівки в ньому файлів і папок, які необхідно приховати від системи контролю версій <strong>git</strong> Як правило, приховують файли або папки, які автоматично генерують свій вміст, або мають конфігураційні параметри, які можуть відрізнятися у тих, хто співпрацює над проектом</p>
+    <ul>
+        <li>git revert - <em>створює антикомміт для вказаного комміту, відміняє зміни, внесені в ньому</em></li>
+        <li>git reset - <em>відміняє зміни файлу</em></li>
+        <li>git rebase master - <em>підтягнути гілку master в гілку з переміщенням</em></li>
+        <li>git cherry-pick - <em>Команда git cherry-pick дозволяє забрати один комміт з іншої гілки і вставити його в поточну</em></li>
+        <li>git stash - <em>призначена для того, щоб помістити поточні зміни, які ми виконали у файлах, в окреме сховище, та повернути файли до вихідного стану</em></li>
+    </ul>
+</body> 
+</html>
