@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
- <html lang="ua">
- </html>
-<head>
-    <meta charset="UTF-8">
-    <title>HW#2</title>    
-</head>
-<body>
-    
-</body> 
+  <html lang="ua"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HW#2</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Імя</th>
+        <th>Прізвище</th>
+        <th>Номер телефону</th>
+        <th>Email</th>
+      </tr>
+      <tr>
+        <th>Земля</th>
+        <th>Блакитна</th>
+        <th>+000003</th>
+        <th>theearth@gmai.com</th>
+      </tr>
+      <tr>
+        <th>Марс</th>
+        <th>Червоний</th>
+        <th>+000004</th>
+        <th>themars@gmail.com</th>
+      </tr>
+      <tr>
+        <th>Нептун</th>
+        <th>Холодний</th>
+        <th>+000008</th>
+        <th>theneptune@gmail.com</th>
+      </tr>
+      <tr>
+        <th>Юпітер</th>
+        <th>Великий</th>
+        <th>+000005</th>
+        <th>thejupiter@gmail.com</th>
+      </tr>
+    </table>
+    <p>Напиши свої контактні дані</p>
+    <form action="#" method="post">
+        <div class="pdata">
+          <input class="information" type="text" name="FirstName" required placeholder="Введіть ім'я"/>
+          <input class="information" type="text" name="SecondName" required placeholder="Введіть прізвище"/>
+          <input class="information" type="tel"name="tel" required placeholder="Введіть номер телефону"/>
+          <input class="information" type="email" name="E-mail" required placeholder="Введіть E-mail"/>
+        </div>
+        <div class="gender">
+            <input checked type="radio" name="gender" value="male"/>Ч
+            <input type="radio" name="gender" value="female"/>Ж
+        </div>
+        <div class="textarea1">
+            <textarea name="text" cols="50" rows="15" required placeholder="Напиши, яке твоє сузір'я"></textarea>
+        </div>
+        <div class="cityselect">
+            <h3>Вибір міста:</h3>
+            <select name="location">
+              <option disabled="disabled" selected="selected">
+                Оберіть місто:
+              </option>
+              <option value="London">Лондон</option>
+              <option value="Paris">Париж</option>
+              <option value="Berlin">Берлін</option>
+              <option value="Lviv">Львів</option>
+              <option value="Madrid">Мадрид</option>
+            </select>
+        </div>
+        <div>
+            <h3>Вибір мови:</h3>
+            <input type="checkbox" name="language" value="Ukrainian" />Українська
+          <input type="checkbox" name="language" value="Russian" />Русский
+          <input type="checkbox" name="language" value="English" />English
+        </div>
+        <div> 
+            <button type="submit">Відправити</button>
+        </div>
+    </form>
+      </body>
 </html>
