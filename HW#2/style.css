@@ -2,3 +2,14 @@ body {
   background: url(img/solarsystem.png); no-repeat
   background-size: 100%;
 }
+ table {
+     border 1px;
+     color: blue;
+     text-size-adjust: 12px;
+     width: 100%;
+     text-align: center;
+     font-weight: 700;
+     margin: 20px auto;
+     padding: 15px;
+     border-collapse: collapse;
+ }
