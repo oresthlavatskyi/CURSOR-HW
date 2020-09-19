@@ -8,7 +8,7 @@
   </head>
   <body>
     <table>
-      <tr>
+      <tr class="main">
         <th>Імя</th>
         <th>Прізвище</th>
         <th>Номер телефону</th>
@@ -39,43 +39,75 @@
         <th>thejupiter@gmail.com</th>
       </tr>
     </table>
-    <p>Напиши свої контактні дані</p>
+    <h3>Заповни свої контактні дані</h3>
     <form action="#" method="post">
-        <div class="pdata">
-          <input class="information" type="text" name="FirstName" required placeholder="Введіть ім'я"/>
-          <input class="information" type="text" name="SecondName" required placeholder="Введіть прізвище"/>
-          <input class="information" type="tel"name="tel" required placeholder="Введіть номер телефону"/>
-          <input class="information" type="email" name="E-mail" required placeholder="Введіть E-mail"/>
-        </div>
-        <div class="gender">
-            <input checked type="radio" name="gender" value="male"/>Ч
-            <input type="radio" name="gender" value="female"/>Ж
-        </div>
-        <div class="textarea1">
-            <textarea name="text" cols="50" rows="15" required placeholder="Напиши, яке твоє сузір'я"></textarea>
-        </div>
-        <div class="cityselect">
-            <h3>Вибір міста:</h3>
-            <select name="location">
-              <option disabled="disabled" selected="selected">
-                Оберіть місто:
-              </option>
-              <option value="London">Лондон</option>
-              <option value="Paris">Париж</option>
-              <option value="Berlin">Берлін</option>
-              <option value="Lviv">Львів</option>
-              <option value="Madrid">Мадрид</option>
-            </select>
-        </div>
-        <div>
-            <h3>Вибір мови:</h3>
-            <input type="checkbox" name="language" value="Ukrainian" />Українська
-          <input type="checkbox" name="language" value="Russian" />Русский
-          <input type="checkbox" name="language" value="English" />English
-        </div>
-        <div> 
-            <button type="submit">Відправити</button>
-        </div>
+      <div class="pdata">
+        <input
+          class="information"
+          type="text"
+          name="FirstName"
+          required
+          placeholder="Введіть ім'я"
+        />
+        <input
+          class="information"
+          type="text"
+          name="SecondName"
+          required
+          placeholder="Введіть прізвище"
+        />
+        <input
+          class="information"
+          type="tel"
+          name="tel"
+          required
+          placeholder="Введіть номер телефону"
+        />
+        <input
+          class="information"
+          type="email"
+          name="E-mail"
+          required
+          placeholder="Введіть E-mail"
+        />
+        <h3>Ваша стать?</h3>
+      </div>
+      <div class="gender">
+        <input checked type="radio" name="gender" value="male" />Ч
+        <input type="radio" name="gender" value="female" />Ж
+      </div>
+      <h3>Розкажи нам про себе більше</h3>
+      <div class="block1">
+        <textarea
+          name="text"
+          cols="50"
+          rows="15"
+          required
+          placeholder="Опиши себе п'ятьма словами"
+        ></textarea>
+      </div>
+      <div class="block2">
+        <h3>Вибір міста:</h3>
+        <select name="location">
+          <option disabled="disabled" selected="selected">
+            Оберіть місто:
+          </option>
+          <option value="London">Лондон</option>
+          <option value="Paris">Париж</option>
+          <option value="Berlin">Берлін</option>
+          <option value="Lviv">Львів</option>
+          <option value="Madrid">Мадрид</option>
+        </select>
+      </div>
+      <div class="languages">
+        <h3>Вибір мови:</h3>
+        <input type="checkbox" name="language" value="Ukrainian" />Українська
+        <input type="checkbox" name="language" value="Russian" />Русский
+        <input type="checkbox" name="language" value="English" />English
+      </div>
+      <div class="button">
+        <button type="submit">Відправити</button>
+      </div>
     </form>
-      </body>
+  </body>
 </html>
